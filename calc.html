@@ -1,0 +1,645 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    California State Template
+    Version 5.0.5
+
+            Based on Twitter Bootstrap
+        -->
+        <meta charset="utf-8">
+
+        <title property="og:title">Erosion Prediction Practice | Caltrans</title>
+        {% load static %}  
+        <meta property="og:image" content="">
+        <meta property="og:description" content="State of California">
+        <meta name="Author" content="State of California" />
+        <meta name="Description" content="State of California" />
+        <meta name="Keywords" content="California, government" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- head content, for all pages -->
+        <!-- Use highest compatibility mode -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- http://t.co/dKP3o1e -->
+        <meta name="HandheldFriendly" content="True">
+        <!-- for Blackberry, AvantGo -->
+        <meta name="MobileOptimized" content="320">
+        <!-- for Windows mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        
+        
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- For all browsers -->
+        <link rel="stylesheet" href="https://dot.ca.gov/css/cagov.core.min.css">
+        <link rel="stylesheet" href="https://dot.ca.gov/css/custom.css">
+        <link rel="stylesheet" href="https://dot.ca.gov/css/sitecore-forms.css">
+        
+        <script src="/js/search.js"></script>
+        
+        <link rel="stylesheet" href="https://dot.ca.gov/css/AuthoringUIExperience/sitecore-extra.css">
+        <link rel="stylesheet" href="https://dot.ca.gov/css/cagov.font-only.min.css">
+        <link rel="stylesheet" href="https://dot.ca.gov/css/colorscheme-oceanside.min.css">
+        
+        <!-- For iPad 3-->
+        <link rel="apple-touch-icon" sizes="144x144" href="https://dot.ca.gov/images/template2014/apple-touch-icon-144x144.png">
+        <!-- For iPhone 4 -->
+        <link rel="apple-touch-icon" sizes="114x114" href="https://dot.ca.gov/images/template2014/apple-touch-icon-114x114.png">
+        <!-- For iPad 1-->
+        <link rel="apple-touch-icon" sizes="72x72" href="https://dot.ca.gov/images/template2014/apple-touch-icon-72x72.png">
+        <!-- For iPhone 3G, iPod Touch and Android -->
+        <link rel="apple-touch-icon" href="https://dot.ca.gov/images/template2014/apple-touch-icon-57x57.png">
+        <!-- For everything else -->
+        <link rel="shortcut icon" href="https://dot.ca.gov/-/media/d618dccb772c461cbc2d2f0f79b749e5.ashx">
+        
+        <!-- Activate ClearType for Mobile IE -->
+        <!--[if IE]>
+        <meta http-equiv="cleartype" content="on">
+        <![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="/js/libs/html5shiv.min.js"></script>
+          <script src="/js/libs/respond.min.js"></script>
+        <![endif]-->
+        <!-- Include Google Analytics -->
+        <!-- virtual="/ssi/analytics.html" -->
+        
+        <!-- Google Tag Manager -->
+        <!--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-573PLG9');
+        </script>-->
+        
+        
+        <!-- End Google Tag Manager -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <style>
+          .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+          }
+        
+          .active,
+          .accordion:hover {
+            background-color: #ccc;
+          }
+        
+          .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+          }
+        
+          .active:after {
+            content: "\2212";
+          }
+        
+          .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+          }
+        
+          body {
+            font-family: "Lato", sans-serif;
+          }
+        
+          ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+          }
+        
+          .sidenav {
+            height: 100%;
+            width: 150px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #f1f1f1;
+            overflow-x: hidden;
+            padding-top: 0px;
+          }
+        
+          .outer {
+            width: 85%;
+            float: right;
+          }
+        
+          .container {
+            width: 85%;
+            float: right;
+          }
+        
+          table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+        
+          td,
+          th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+        
+          tr:nth-child(even) {
+            background-color: #dddddd;
+          }
+        </style>
+        </head>
+        
+        <body>
+        
+          <div class="utility-header">
+            <div class="container">
+              <div class="group flex-row">
+                <div class="social-media-links">
+                  <div class="header-cagov-logo"><a href="https://www.ca.gov/"><span class="sr-only">CA.gov</span><img
+                        src="https://dot.ca.gov/images/Ca-Gov-Logo-Gold.svg" class="pos-rel" alt="" aria-hidden="true"
+                        style="margin-left:100px"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div style="width:100%;">
+            <div class="sidenav" style="width:15%; float:left">
+              <ul>
+                <li><a class="active" href="C://Users/farhe/Desktop/Home.html">Home</a></li>
+                <li><a href="C://Users/farhe/Desktop/calc.html">Calculate Soil Erosion</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+            </div>
+        
+            <!--<div class="outer">-->
+            <div class="container">
+              <div>
+                <h2>Pre Construction</h2>
+              </div>
+        
+              <button class="accordion">C Factor</button>
+              <div class="panel">
+                <label for="C_factor">C Factor</label>
+                <input type="text"  id="C_factor" name="C_factor" /><br>
+                <label for="cover_bmps">Choose cover bmp</label>
+                
+                <select id="bmp">
+                  {% for cfactor in cfactors %}
+                  <option>{{cfactor}}</option>
+                  {% endfor %}
+                </select>
+        
+        
+                <label for="cfactor">C Factor</label>
+                
+                <select id="c">
+                    {% for cfactor in cfactors %}
+                    <option>{{cfactor.cf}}</option>
+                    {% endfor %}
+                </select>
+                <label for="coverage">percentage cover</label>
+                <select id="percentagecover_c">
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                    <option>30</option>
+                    <option>35</option>
+                    <option>40</option>
+                    <option>45</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>75</option>
+                    <option>80</option>
+                    <option>85</option>
+                    <option>90</option>
+                    <option>95</option>
+                </select><br>
+                <button id="cFactorAdd" onclick="onAddClick('prec',id)">Add</button>
+                <button id="cFactorCalc" onclick="calcc()">Calculate C</button>
+                
+              </div>
+        
+              <div>
+                <table id="precTable" style="width:100%; display: none; padding-bottom: 20px;">
+                  <tr>
+                    <th>BMP</th>
+                    <th>C-Factor </th>
+                    <th>Percentage cover(%)</th>
+                  </tr>
+                </table>
+              </div>
+        
+              <button class="accordion">P Factor</button>
+              
+              <div class="panel">
+                <label for="P_factor">P Factor</label>
+             <input type="text"  id="P_factor" name="P_factor" /><br>
+                <label for="Support Practices">Choose support practices</label>
+                
+                <select id="sp">
+                    {% for pfactor in pfactors %}
+                    <option>{{pfactor}}</option>
+                    {% endfor %}
+                </select>
+        
+                <label for="pfactor">Enter P Factor</label>
+                
+                <select id="p">
+                    {% for pfactor in pfactors %}
+                    <option>{{pfactor.pf}}</option>
+                    {% endfor %}
+                </select>
+                <label for="coverage">percentage cover</label>
+                <select id="percentagecover_p">
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                    <option>30</option>
+                    <option>35</option>
+                    <option>40</option>
+                    <option>45</option>
+                    <option>50</option>
+                    <option>55</option>
+                    <option>60</option>
+                    <option>65</option>
+                    <option>70</option>
+                    <option>75</option>
+                    <option>80</option>
+                    <option>85</option>
+                    <option>90</option>
+                    <option>95</option>
+                </select><br>
+        
+                <button id="pFactorAdd" onclick="onAddClick('prep',id)">Add</button>
+                <button id="pFactorCalc" onclick="calcp()">Calculate P</button>
+              </div>
+        
+              <div>
+                <table id="prepTable" style="width:100%; display: none; padding-bottom: 20px;">
+                  <tr>
+                    <th>Support Practices</th>
+                    <th>P factor </th>
+                    <th>Percentage</th>
+                  </tr>
+                </table>
+              </div>
+              
+              
+              
+        
+              <button class="accordion">LS Factor</button>
+              <div class="panel">
+                <label for="length">Length(in feet)</label>
+                <input type="text" id= "prelslength" list="length" />
+                <datalist id="length">
+                  <option>0.01</option>
+                  <option>0.5</option>
+                </datalist>
+        
+        
+                <label for="steepness">Steepness(in %)</label>
+                <input type="text" id="prelssteep" list="steepness" />
+                <datalist id="steepness">
+                  <option>0.01</option>
+                  <option>0.5</option>
+                  <option>0.09</option>
+                  <option>0.2</option>
+                </datalist>
+        
+                <button id="lsFactorAdd" onclick="onAddClick('prels',id)">Add</button>
+              </div>
+              <div>
+                <table id="prelsTable" style="width:100%; display: none; padding-bottom: 20px;">
+                  <tr>
+                    <th>Factor</th>
+                    <th>Parameter </th>
+                    <th>Action</th>
+                  </tr>
+                </table>
+              </div>
+        
+        
+        
+              <button class="accordion">K Factor</button>
+              <div class="panel">
+                <label for="kf">K Factor</label>
+                <input type="text" id="prekk" list="k" />
+                <datalist id="k">
+                  <option>0.01</option>
+                  <option>0.5</option>
+                  <option>0.09</option>
+                  <option>0.2</option>
+                </datalist>
+        
+                <button id="kFactorAdd" onclick="onAddClick('prek', id)">Add</button>
+              </div>
+        
+              <div>
+                <table id="prekTable" style="width:100%; display: none; padding-bottom: 20px;">
+                  <tr>
+                    <th>Factor</th>
+                    <th>Parameter </th>
+                    <th>Action</th>
+                  </tr>
+                </table>
+              </div>
+        
+              <button class="accordion">R Factor</button>
+              <div class="panel">
+                <label for="R">R</label>
+                <input type="text" /><a href="https://lew.epa.gov/" target="blank">Click here to calculate R value</a>
+                <button id="rFactorAdd" onclick="onAddClick('pre',id)">Add</button>
+              </div>
+        
+            <div>
+               <input type ="text"/>
+                  <button id="Calculate Soil Erosion" onclick="">Calculate Soil Erosion</button>
+                </div>
+        
+              <div>
+                <h2>Post Construction</h2>
+              </div>
+              <button class="accordion">C Factor</button>
+              <div class="panel">
+                <label for="cover_bmps">Choose cover bmp</label>
+                <label for="cover_bmps">Choose cover bmp</label>
+                <input type="text" list="bmp" />
+                <datalist id="bmp">
+                  <option>Straw</option>
+                  <option>Hydroseed</option>
+                  <option>Jute Net</option>
+                  <option>BFM</option>
+                </datalist>
+        
+        
+                <label for="cfactor">Enter C Factor</label>
+                <input type="text" list="c" />
+                <datalist id="c">
+                  <option>0.01</option>
+                  <option>0.9</option>
+                  <option>0.05</option>
+                  <option>0.2</option>
+                </datalist>
+                <button id="cFactorAdd" onclick="onAddClick('pre',id)">Add</button>
+        
+        
+                <table id="preTable" style="width:100%; display: none;">
+                  <tr>
+                    <th>Factor</th>
+                    <th>Parameter </th>
+                    <th>Action</th>
+                  </tr>
+                </table>
+              </div>
+        
+        
+        
+        
+              <button class="accordion">P Factor</button>
+              <div class="panel">
+                <label for="Support Practices">Choose support practices</label>
+                <input type="text" list="sp" />
+                <datalist id="sp">
+                  <option>Loose</option>
+                  <option>Terracing</option>
+                  <option>Benching</option>
+                  <option>Fiber Rolls</option>
+                </datalist>
+        
+                <label for="pfactor">Enter P Factor</label>
+                <input type="text" list="p" />
+                <datalist id="p">
+                  <option value=1.0>1.0</option>
+                  <option value=0.9>0.9</option>
+                  <option value=0.7>0.7</option>
+                  <option value=0.7>0.7</option>
+                </datalist>
+        
+                <button id="pFactorAdd" onclick="onAddClick('pre',id)">Add</button>
+              </div>
+        
+              <button class="accordion">LS Factor</button>
+              <div class="panel">
+                <label for="length">Length(in feet)</label>
+                <input type="text" list="length" />
+                <datalist id="length">
+                  <option>0.01</option>
+                  <option>0.5</option>
+                </datalist>
+        
+        
+                <label for="steepness">Steepness(in %)</label>
+                <input type="text" list="steepness" />
+                <datalist id="steepness">
+                  <option>0.01</option>
+                  <option>0.5</option>
+                  <option>0.09</option>
+                  <option>0.2</option>
+                </datalist>
+        
+                <button id="lsFactorAdd" onclick="onAddClick('pre',id)">Add</button>
+              </div>
+        
+              <button class="accordion">K Factor</button>
+              <div class="panel">
+                <label for="kf">K Factor</label>
+                <input type="text" list="k" />
+                <datalist id="k">
+                  <option>0.01</option>
+                  <option>0.5</option>
+                  <option>0.09</option>
+                  <option>0.2</option>
+                </datalist>
+        
+                <button id="kFactorAdd" onclick="onAddClick('pre', id)">Add</button>
+              </div>
+        
+              <button class="accordion">R Factor</button>
+              <div class="panel">
+                <label for="R">R</label>
+                <input type="text" /><a href="https://lew.epa.gov/" target="blank">Click here to calculate R value</a>
+                <button id="rFactorAdd" onclick="onAddClick('pre',id)">Add</button>
+              </div>
+        
+        
+        
+              <table id="preTable" style="width:100%; display: none;">
+                <tr>
+                  <th>Factor</th>
+                  <th>Parameter </th>
+                  <th>Action</th>
+                </tr>
+              </table>
+            
+            <div>
+              <input type ="text"/>
+                  <button id="Calculate Soil Erosion" onclick="">Calculate Soil Erosion</button>
+                </div>
+            </div>
+        
+        
+        
+          </div>
+          <table id="postTable" style="width:100%; display: none;">
+            <tr>
+              <th>Factor</th>
+              <th>Parameter </th>
+              <th>Action</th>
+            </tr>
+          </table>
+        
+          </div>
+          </div>
+          </div>
+        
+        
+          <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+        
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+              });
+            }
+            function calcc(){
+                var table = document.getElementById("precTable");
+                var cfactor=0;
+                
+                
+                for (var i = 1, row; row = table.rows[i]; i++) {
+                    
+                 var j=1;
+                 
+                  //result=row.cells[j].innerHTML*(row.cells[j+1].innerHTML*0.01);
+                  
+                    cfactor+=row.cells[j].innerHTML*(row.cells[j+1].innerHTML*0.01);
+                    console.log(cfactor);
+                    
+                }  
+                document.getElementById('C_factor').value = cfactor.toFixed(4);
+
+            }
+            function calcp(){
+                var table = document.getElementById("prepTable");
+                var pfactor=0;
+                var result;
+                //alert("hello");
+                for (var i = 1, row; row = table.rows[i]; i++) {
+                    //alert("inside for");
+                 var j=1;
+                 
+                  result=row.cells[j].innerHTML*(row.cells[j+1].innerHTML*0.01);
+                  
+                    pfactor+=row.cells[j].innerHTML*(row.cells[j+1].innerHTML*0.01);
+                    console.log(pfactor);
+                    
+                }  
+                document.getElementById('P_factor').value = pfactor.toFixed(4);
+
+            }
+            function onAddClick(table, buttonID) {
+              var factortable = document.getElementById(table + "Table");
+              if (buttonID == 'cFactorAdd') {
+                var row = factortable.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = document.getElementById("bmp").value ;
+                cell2.innerHTML = document.getElementById("c").value ;
+                cell3.innerHTML = document.getElementById("percentagecover_c").value;
+              }
+              else if (buttonID == 'pFactorAdd') {
+                var row = factortable.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = document.getElementById("sp").value ;
+                cell2.innerHTML = document.getElementById("p").value;
+                cell3.innerHTML = document.getElementById("percentagecover_p").value;
+        
+              }
+              else if (buttonID == 'lsFactorAdd') {
+                var row = factortable.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = "LS FACTOR";
+                cell2.innerHTML = "Length: " + document.getElementById(table + "length").value + ", LS Factor Value:" + document.getElementById(table + "steep").value;
+                cell3.innerHTML = "<button onclick=\"deleteRow('pre',this)\">Remove</button>";
+        
+              }
+              else if (buttonID == 'kFactorAdd') {
+                var row = factortable.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = "K FACTOR";
+                cell2.innerHTML = "K Factor Value: " + document.getElementById(table + "k").value;
+                cell3.innerHTML = "<button onclick=\"deleteRow('pre',this)\">Remove</button>";
+        
+              }
+              else if (buttonID == 'rFactorAdd') {
+                var row = factortable.insertRow(-1);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                var cell3 = row.insertCell(2);
+                cell1.innerHTML = "R FACTOR";
+                cell2.innerHTML = "R Factor Value: " + document.getElementById(table + "r").value;
+                cell3.innerHTML = "<button onclick=\"deleteRow('pre',this)\">Remove</button>";
+              }
+              if (factortable.style.display == "none") {
+                factortable.style.display = "block";
+              }
+            }
+        
+        
+            function deleteRow(table, row) {
+              var i = row.parentNode.parentNode.rowIndex;
+              document.getElementById(table + "Table").deleteRow(i);
+            }
+          </script>
+        
+        </body>
+        
+        </html> -->
